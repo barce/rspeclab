@@ -3,6 +3,7 @@ require 'spec_helper'
 module Codebreaker
   describe Game do
     describe "#start" do
+      # before(:each) runs code within it before each "it" block
       before(:each) do
         @output = double('output').as_null_object
         @game = Game.new(@output)
