@@ -1,0 +1,7 @@
+coloring alias: alias rspec='rspec --color'
+
+rspec rspec_greeter.rb
+cucumber features
+
+
+
