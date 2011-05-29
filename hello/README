@@ -1,0 +1,9 @@
+Notes:
+
+this is a sample project with a spec folder for rspec
+and a features folder for running cucumber tests
+
+To run tests:
+rspec spec/greeter_spec.rb
+cucumber features
+
