@@ -21,14 +21,15 @@ module Codebreaker
     def guess(guess)
       # @secret.include?(guess[0]) ? @output.puts '-' : @output.puts ''
       # if guess[0] == @secret[0]
-      if exact_match?(guess, 0)
-        mark = '+' 
-      elsif number_match?(guess, 0)
-        mark = '-'
-      else
-        mark = ''
+      mark = ''
+      (0..3).each do |index|
+        if exact_match?(guess, index)
+          mark << '+'
+        elsif number_match?(guess, index)
+          mark << '-'
+        end
       end
-        @output.puts mark
+      @output.puts mark
     end
 
     def exact_match?(guess, index) 
