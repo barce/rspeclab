@@ -1,0 +1,3 @@
+this project checks a user password for its strength.
+it reveals how long the password would take to crack given certain
+conditions.
