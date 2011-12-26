@@ -17,6 +17,17 @@ module Passwordchecker
         output.should_receive(:puts).with('Enter password:')
         cracker.start
       end 
+
+
+    end
+
+    describe "#input" do
+      let(:output) { double('output').as_null_object }
+      let(:cracker) { Cracker.new(output) }
+      it "echoes the password back" do
+        cracker.password = 'test'
+        output.should_receive(:puts).with('test')
+      end
     end
   end
 end

@@ -23,3 +23,17 @@ end
 Then /^I should see "([^"]*)"$/ do |message|
   output.messages.should include(message)
 end
+
+
+Given /^the password has a "([^"]*)"$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
+end
+
+When /^I submit a "([^"]*)"$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
+end
+
+Then /^the result should be its "([^"]*)"$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
+end
+
