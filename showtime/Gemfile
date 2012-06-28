@@ -37,4 +37,5 @@ group :development, :test do
   gem 'cucumber-rails'
   gem 'webrat'
   gem 'database_cleaner'
+  gem 'autotest'
 end
